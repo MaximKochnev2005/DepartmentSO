@@ -6,7 +6,8 @@
   "repository": "git@github.com:MaximKochnev2005/DepartmentSO.git",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start:prod": "node index.js"
   },
   "dependencies": {
     "@telegraf/session": "telegraf/session",
