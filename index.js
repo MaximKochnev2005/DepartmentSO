@@ -14,22 +14,8 @@ import {
 } from "./markup/markup.js";
 import {message} from "telegraf/filters";
 const path = "./static/Резидентам_Финиш_2.pdf"
-import * as http from "http";
 
 export const bot = new Telegraf(BOT_TOKEN);
-
-const requestListener = function (req, res) {
-    res.writeHead(200);
-    res.end("My first server!");
-};
-
-const host = 'localhost';
-const port = 8000;
-
-const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
-});
 
 bot.context.db = {
     previous: '0',
